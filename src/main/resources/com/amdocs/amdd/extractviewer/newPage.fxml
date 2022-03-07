@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-alignment: CENTER;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.amdocs.amdd.extractviewer.NewController">
+   <children>
+      <HBox prefHeight="403.0" prefWidth="600.0" style="-fx-alignment: CENTER;" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="609.0" style="-fx-background-color: #FFD700;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="welcomeTextId" alignment="CENTER" layoutX="-1.0" layoutY="1.0" prefHeight="27.0" prefWidth="600.0" text="Welcome! Let's set up your Extract Viewer!!!☺">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="-1.0" layoutY="26.0" prefHeight="374.0" prefWidth="600.0">
+                     <children>
+                        <JFXCheckBox fx:id="createMasterDbId" layoutX="141.0" layoutY="-4.0" prefHeight="18.0" prefWidth="140.0" text="Check to create new connection to MasterDB" underline="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <TextField fx:id="userPassInstanceId" layoutX="168.0" layoutY="17.0" prefHeight="25.0" prefWidth="264.0" promptText="user/password@instance">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="guiVersionId" layoutX="168.0" layoutY="48.0" prefHeight="25.0" prefWidth="264.0" promptText="Gui Version">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <JFXCheckBox fx:id="tunnelingCheckBoxId" layoutX="141.0" layoutY="200.0" text="Tunneling is required">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <TextField fx:id="tunnelingUserPassInstId" layoutX="168.0" layoutY="221.0" prefHeight="31.0" prefWidth="264.0" promptText="user/password@instance">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="portId" layoutX="168.0" layoutY="252.0" prefHeight="31.0" prefWidth="264.0" promptText="port">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="labelRemoteId" alignment="TOP_CENTER" layoutY="283.0" prefHeight="27.0" prefWidth="600.0" text="Log filename is required bellow">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="logFileNameId" layoutX="168.0" layoutY="310.0" prefHeight="25.0" prefWidth="264.0" />
+                        <JFXComboBox fx:id="comboBoxId" layoutX="168.0" layoutY="79.0" prefHeight="25.0" prefWidth="264.0" promptText="Click to unfold" />
+                        <Label fx:id="linuxDetailsLabelId" alignment="CENTER" layoutX="168.0" layoutY="132.0" prefHeight="17.0" prefWidth="264.0" text="Add below details for Linux Server">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="envDetailsId" layoutX="168.0" layoutY="157.0" prefHeight="31.0" prefWidth="264.0" promptText="user/password@instance">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <JFXButton fx:id="doneButtonId" layoutX="240.0" layoutY="344.0" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #B0903D;" text="Done" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

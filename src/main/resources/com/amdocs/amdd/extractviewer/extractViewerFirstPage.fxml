@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.amdocs.amdd.extractviewer.ExtractViewerMainController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="600.0" snapToPixel="false" style="-fx-background-color: #FFD700;">
+               <children>
+                  <Label alignment="CENTER" layoutX="170.0" layoutY="27.0" text="Welcome to Extract Viewer" underline="true" wrapText="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pleaseSelectId" alignment="CENTER" layoutX="86.0" layoutY="65.0" prefHeight="72.0" prefWidth="400.0" text="Please choose on of the below bullets and mark check box if requred" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="83.0" layoutY="221.0" text="Choose type of Connection" underline="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="83.0" layoutY="137.0" text="Choose type of Server" underline="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXRadioButton fx:id="remoteBulletId" layoutX="80.0" layoutY="194.0" text="Connection to Remote Server">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="localBulletId" layoutX="80.0" layoutY="173.0" text="Connection to Local Server">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="newConnBulletId" layoutX="80.0" layoutY="269.0" text="New Connection">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="existingConnBulletId" layoutX="80.0" layoutY="248.0" text="Existing Connection">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXButton fx:id="startButtonId" layoutX="255.0" layoutY="335.0" prefHeight="32.0" prefWidth="91.0" style="-fx-background-color: #B0903D;" text="Start">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</HBox>
